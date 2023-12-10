@@ -1,0 +1,329 @@
+/* Amaninder Singh Dhillon, 8975714 */
+html{
+    font: normal normal normal 20px/1.5 arial, helvetica, sans-serif;
+    background-color: rgb(220, 212, 212);
+}
+
+body{
+    width: 100%;  
+    margin: auto;
+    font: normal normal normal 1rem/1rem sans-serif;
+    padding: 1rem;
+}
+.headerandfooter{
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+    padding: 0.3rem;
+    margin: 0.15rem;
+    background-image: linear-gradient(to right, #EEF5FF , #9EB8D9, #7C93C3);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
+}
+h1{
+    color: rgb(169, 6, 6);
+    font-variant: small-caps;
+}
+h2{
+    color: rgb(62, 133, 22);
+    font-variant: small-caps;
+    margin-left: 1rem;
+}
+footer p{
+    font-size: medium;
+    color: rgb(150, 15, 62);
+}
+nav{
+    border: 0.1rem solid #EA906C;
+    background-color: #EA906C;  
+    margin: 1rem 0;
+    border-radius: 1rem;
+    text-align: left;
+}
+nav a{
+    color: #2B2A4C;
+    font-size: 1 rem;
+    font-weight: 900;
+    text-decoration: none;
+    padding: 0 2.5rem;
+}
+nav a:hover{
+    color: cornsilk;
+    
+}
+nav ul{
+    list-style-type: none;
+    padding: 0%;
+}
+nav>ul>li{ 
+    display: inline-block;
+    position: relative;  
+}
+nav ul li ul{
+    display: none;
+
+}
+nav ul li:hover ul{
+    display: block;
+}
+nav ul li ul{
+    width: 150%;
+    position: absolute;
+    z-index: 999;
+    text-align: left;
+    background-color: #ffd099;
+    box-shadow: 0 0 0.1rem #ffd099;
+}
+nav ul li ul li a{
+    padding: 0.5rem;
+    display: block;
+    text-align: center;
+}
+
+main{
+    flex: 1 1 70%;
+}
+aside{
+
+    flex: 1 1 30%;
+    background: #b2d7ef url('../Images/Index Page Images/Katherine1.png') center center / cover no-repeat content-box;
+}
+aside h2{
+    text-align: center;
+    color: #ffd099;
+}
+.mainandaside{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+footer{
+    clear: both;
+}
+.figandquote{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    
+}
+.mainimg{
+    border: 0.2rem solid rgb(157, 89, 5);
+    clip-path: polygon(76px 46px, 28.25% 11.8%, 32.5% 9.98%, 35.99% 9.92%, 40.29% 9.08%, 47.26% 8.23%, 53.88% 9.08%, 58.97% 34px, 62.34% 15.41%, 65.39% 17.37%, 69.41% 22.25%, 70.79% 27.23%, 70.03% 32.64%, 69.27% 36.25%, 66.11% 38.1%, 64.36% 40.71%, 62.8% 43.3%, 65.13% 46.29%, 67.38% 49.04%, 70.66% 52.36%, 75.26% 55.14%, 79.88% 57.08%, 85.79% 59.56%, 90.44% 61.51%, 94.51% 67.3%, 95.36% 71.89%, 95.98% 77.66%, 97.36% 84.67%, 97.13% 88.13%, 96.09% 97.84%, 90.67% 98.08%, 56.33% 98.06%, 4.39% 98.1%, 5.77% 88.16%, 8.96% 77.07%, 12.47% 69.97%, 14.32% 63.89%, 18.71% 61.2%, 24.21% 58.56%, 29.13% 55.8%, 34.33% 53.84%, 36.9% 52.56%, 34.64% 49.66%, 32.67% 46.17%, 30% 42.9%, 27.97% 43.16%, 24.8% 42.17%, 22.78% 37.75%, 24.13% 34.08%, 21.93% 28.15%, 22.32% 23.14%, 24.72% 21.48%, 24.11% 18.81%);
+    shape-outside: polygon(35px 19px, 56.47% 21px, 68.2% 18.07%, 72.39% 24.73%, 72.16% 33.11%, 63.89% 42.2%, 67.95% 49.02%, 72.08% 53.72%, 79.67% 57.47%, 89.83% 62.11%, 95.53% 70.79%, 97.73% 80.89%, 97.43% 89.11%, 95.24% 98.43%, 60.18% 98.38%, 3.57% 99.18%);
+    float: left;
+    height: 15rem;
+    width: 15rem;
+}
+#inlinepara{
+    text-align: justify;
+    flex-grow: 4;
+    flex-basis: auto;
+
+}
+figcaption{
+    font-style: bold;
+    font-variant: small-caps;
+}
+q{
+    font-family: cursive;
+    font-style: italic;
+    font-size: larger;
+    margin-left: 1rem;
+}
+aside ul li{
+    list-style: none;
+    line-height: 1.5rem;
+}
+aside li > a{ 
+    color: #ffd099;
+    font-weight: 900;
+    text-decoration: none;
+}
+aside a:hover{
+    color: white;
+}
+
+table{
+    border-collapse: collapse;
+    caption-side: top;
+    border: 0.1rem solid black;
+    overflow: hidden;
+   margin: 2rem;
+}
+th{
+    background-color: #b2d7ef;
+    padding: 1rem 2rem;
+    border: 0.1rem solid black;
+}
+thead :empty{
+    background-color: grey;
+}
+tr{
+    border:0.1rem solid black;
+}
+tbody tr:hover{
+    background-color: #96e8ce;
+}
+td{
+    border: 0.1rem solid black;
+}
+tbody td, tbody th{
+    position: relative;
+    padding : 1rem 2rem;
+}
+tbody td:hover::after, tbody td:hover::after{
+    content: "";
+    position: absolute;
+    background-color: #475a66;
+    left : 0;
+    width: 100%;
+    top : -100rem;
+    height : 500rem;
+    z-index: -1;
+} 
+caption{
+    background-color: #efcb66;
+    color: blue;
+    font-weight: 700;
+    padding: 1rem;
+}
+.bodygrid{
+    display: grid;
+    column-gap: 0.1rem;
+    row-gap: 0.1rem;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 3fr 1fr;
+}
+
+.grid{
+    display: grid;
+    column-gap: 4rem;
+    row-gap: 1rem;
+    grid-template-columns: 3fr 3fr 3fr;
+    grid-template-rows: 3fr 3fr 3fr;
+    grid-template-columns: 13rem 13rem 13rem;
+    grid-template-rows: 10rem 10rem 10rem;
+}
+.galleryimages{
+    height: 100%;
+    width: 100%;
+    clip-path: ellipse();
+}
+input, select, textarea{
+    width: 50%;
+    display: block;
+    margin: 0.1rem;
+    padding: 0.2rem;
+}
+input[type =radio], [type=checkbox]{
+    width: 3%;
+    display: inline;
+}
+.button{
+    background-color: #efcb66;
+    border: 0.1rem solid black;
+    border-radius: 2rem;
+}
+label, legend, option, select{
+    font-variant: inherit;
+    font-weight: bold;
+}
+input[type=submit], [type=reset]{
+    display: inline;
+    width: 20%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+fieldset{
+    border: none;
+    padding-left: 0.1rem;
+    
+}
+@media (max-width: 600px ) {
+    html{
+        font: small-caps normal normal 5px/0.5 arial, helvetica, sans-serif;
+        background-color: rgb(141, 238, 45);
+    }
+    body{
+        font: small-caps normal normal 1rem/1rem arial, helvetica, sans-serif;
+    }
+    .mainimg{
+        border: 0.2rem solid rgb(157, 89, 5);
+        clip-path:circle();
+        shape-outside: polygon(6px 4px, 74.72% -1.51%, 94.58% 23.42%, 106.87% 44.34%, 101.35% 63%, 92.63% 85.38%, 60.18% 98.38%);
+        float: left;
+        height: 15rem;
+        width: 15rem;
+    }
+    .mainandaside{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+    aside{
+        background: #b2d7ef url('../Images/Index Page Images/Katherine2.png'); 
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 50rem;
+    }
+    .grid{
+        display: grid;
+        column-gap: 1rem;
+        row-gap: 0.5rem;
+        grid-template-columns: 3fr;
+        grid-template-rows: 3fr;
+        grid-template-columns: 13rem 13rem ;
+        grid-template-rows: 10rem 10rem;
+    }
+    .galleryimages{
+        clip-path:none;
+    }
+    iframe{
+        width: 45rem;
+        height: 20rem;
+    }
+}
+@media (min-width: 600px) and (max-width: 900px ) {
+    html{
+        font: oblique normal normal 10px/1 Andale Mono, monospace;
+        background-color: rgb(127, 129, 131);
+    }
+    body{
+        font: small-caps normal normal 2rem/2rem arial, helvetica, sans-serif;
+    }
+    .mainimg{
+        border: 0.2rem solid rgb(157, 89, 5);
+        clip-path:circle();
+        shape-outside: polygon(6px 4px, 74.72% -1.51%, 94.58% 23.42%, 106.87% 44.34%, 101.35% 63%, 92.63% 85.38%, 60.18% 98.38%);
+        float: left;
+        height: 15rem;
+        width: 15rem;
+    }
+    aside{
+        background: #b2d7ef url('../Images/Index Page Images/Katherine3.png') center center / cover no-repeat content-box;
+    }
+    .grid{
+        display: grid;
+        column-gap: 2rem;
+        row-gap: 1rem;
+        grid-template-columns: 3fr 3fr ;
+        grid-template-rows: 3fr 3fr;
+        grid-template-columns: 13rem 13rem ;
+        grid-template-rows: 10rem 10rem;
+    }
+    .galleryimages{
+        clip-path:none;
+    }
+    aside ul li{
+        line-height: 2.5rem;
+    }
+    iframe{
+        width: 35rem;
+        height: 20rem;
+    }
+}
